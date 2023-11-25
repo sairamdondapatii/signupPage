@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.container{
+    background-color: white;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 8px rgb(153, 150, 150);
+}
+.head>h1{
+    text-align: center;
+    
+    padding: 10px 40px;
+    border-radius: 4px;
+    
+}
+.form{
+    padding: 30px 40px;
+    
+}
+.content,.terms{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+    position: relative;
+   
+}
+.content>label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.form>.content>input{
+    display: block;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(201, 197, 197);
+    font-size: 15px;
+    padding: 5px 0px;
+    padding-left: 5px;
+    width: 100%;
+    
+}
+.form>.content>input:focus{
+    
+    border-color: dodgerblue;
+    
+}
+.content>span{
+    visibility: hidden;
+    position: absolute;
+    top: 21px;
+    right:10px
+    
+}
+.content>small{
+    position: absolute;
+    top: 55px;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.btn{
+    background-color: #2ecc71;
+    border: 2px solid #2ecc71;
+    color: white;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.terms>small{
+    color: #e74c3c;
+}
+.content.sucess input{
+    border-color: #2ecc71;
+}
+.content.error input{
+    border-color: #e74c3c;
+}
+.content.sucess span.sucess{
+    color: #2ecc71;
+    visibility: visible;
+}
+.content.error span.error{
+    color: #e74c3c;
+    visibility: visible;
+}
+.content.error span.sucess{
+    visibility: hidden;
+}
+.content.sucess span.error{
+    visibility: hidden;
+}           
+.content.error small.error{
+    visibility: visible;
+    color: #e74c3c;;
+}
+.terms.sucess small,.terms small{
+    visibility: hidden;
+}
+.terms.error small{
+    visibility: visible;
+}
+.bottom{
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+}
+.bottom>p>a{
+    color: grey;
+}
+@media (max-width:720px){
+    .container{
+        max-width: 100%;
+        margin-top: 80px;
+        box-shadow: none;
+    }
+}
